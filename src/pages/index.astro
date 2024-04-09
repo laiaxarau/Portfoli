@@ -1,0 +1,101 @@
+---
+import Layout from "../layouts/Layout.astro";
+import About from "../components/About.astro";
+import Projects from "../components/Projects.astro";
+import Skills from "../components/Skills.astro";
+---
+
+<Layout title="Laia Xarau - developer">
+  <main>
+    <h1>Front-End Developer & SEO</h1>
+    <h2>My projects</h2>
+    <div class="flex flex-row col-2 gap-10" id="projects">
+      <div>
+        <Projects
+          imageSrc="/public/illusions2.png"
+          pageHref="https://www.il-lusions.cat/"
+          pageTitle="Non-profit site"
+          pageDescription="A wordpress site performing with Elementor"
+        />
+      </div>
+      <div>
+        <Projects
+          imageSrc="/public/spacex_home2.png"
+          pageHref="https://master--laiaspacex.netlify.app/"
+          pageTitle="SpaceX API site"
+          pageDescription="An Astro site performing with Tailwind and fetching information from SpaceX API"
+        />
+      </div>
+    </div>
+    <div id="skills">
+      <h2 class="my-8">My Skills</h2>
+      <Skills />
+    </div>
+    <div id="about">
+      <h2 class="my-8">About me</h2>
+      <About />
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+  .astro-a {
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translatex(-50%);
+    width: 220px;
+    height: auto;
+    z-index: -1;
+  }
+  h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+  .instructions {
+    margin-bottom: 2rem;
+    border: 1px solid rgba(var(--accent-light), 25%);
+    background: linear-gradient(
+      rgba(var(--accent-dark), 66%),
+      rgba(var(--accent-dark), 33%)
+    );
+    padding: 1.5rem;
+    border-radius: 8px;
+  }
+  .instructions code {
+    font-size: 0.8em;
+    font-weight: bold;
+    background: rgba(var(--accent-light), 12%);
+    color: rgb(var(--accent-light));
+    border-radius: 4px;
+    padding: 0.3em 0.4em;
+  }
+  .instructions strong {
+    color: rgb(var(--accent-light));
+  }
+  .link-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 2rem;
+    padding: 0;
+  }
+</style>
