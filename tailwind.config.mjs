@@ -17,7 +17,7 @@ export default {
 				'fondo2': '#1d273f',
 				'headers':'#243c5a',
 				'lletra':'#d3d8dc',
-				'lletra2':'#245a3c',
+				
 
 
 			}
