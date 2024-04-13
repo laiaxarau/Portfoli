@@ -1,8 +1,6 @@
-<div class="text-lletra">
-  <p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis id ea maiores
-    voluptate mollitia consequuntur laboriosam nihil quia optio facilis?
-    Cupiditate vel deserunt excepturi recusandae repellendus possimus?
-    Exercitationem, magni repellat?
-  </p>
-</div>
+---
+import { AboutMe } from "../services/info.json";
+---
+
+{AboutMe.map((element) => <p class="text-lletra">{element}</p>)}
+<!-- <div class="text-lletra"></div> -->

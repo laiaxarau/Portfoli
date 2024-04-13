@@ -7,6 +7,8 @@ export default {
 			colors: {
 				
 				'verd': '#032b40',
+				// 'verd': '#29607D',
+				// 'verd':'#646A6D',
 				'lila': '#180340',
 				'granate': '#400322',
 				'mostassa': '#5c5104',

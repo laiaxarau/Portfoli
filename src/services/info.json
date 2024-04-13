@@ -1,0 +1,22 @@
+{
+    "projects": [
+    {
+          "imageSrc": "/illusions2.png",
+          "pageHref": "https://www.il-lusions.cat/",
+          "pageTitle": "Non-profit site",
+          "pageDescription": "A wordpress site performed with Elementor for a non-profit organization"
+    },
+    {
+         "imageSrc":"/spacex_home2.png",
+         "pageHref":"https://master--laiaspacex.netlify.app/",
+         "pageTitle":"SpaceX API site",
+         "pageDescription":"An Astro site performed with Tailwind and fetching images and information from SpaceX API"
+        }
+    ],
+    "AboutMe":[
+        "I started learning SEO and Digital Marketing and working with Worpress and Prestashop.",
+        "When I realised how badly I needed a developer to solve any SEO issue.",
+        "That's why I started to poke my nose into developing stuff and I found out something that really touched me, I found a kind of magic into coding 💫.",
+        "So, here I am, learning development and looking for a project that challenge myself."
+    ]
+}

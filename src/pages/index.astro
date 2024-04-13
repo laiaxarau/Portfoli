@@ -3,36 +3,34 @@ import Layout from "../layouts/Layout.astro";
 import About from "../components/About.astro";
 import Projects from "../components/Projects.astro";
 import Skills from "../components/Skills.astro";
+import { projects } from "../services/info.json";
 ---
 
 <Layout title="Laia Xarau - developer">
   <main>
     <h1>Front-End Developer & SEO</h1>
-    <h2>My projects</h2>
-    <div class="flex flex-row col-2 gap-10" id="projects">
-      <div>
-        <Projects
-          imageSrc="/illusions2.png"
-          pageHref="https://www.il-lusions.cat/"
-          pageTitle="Non-profit site"
-          pageDescription="A wordpress site performing with Elementor"
-        />
-      </div>
-      <div>
-        <Projects
-          imageSrc="/spacex_home2.png"
-          pageHref="https://master--laiaspacex.netlify.app/"
-          pageTitle="SpaceX API site"
-          pageDescription="An Astro site performing with Tailwind and fetching information from SpaceX API"
-        />
-      </div>
+    <h2 class="text-4xl" id="projects">My projects</h2>
+    <div class="flex flex-row col-2 gap-10">
+      {
+        projects.map((project) => (
+          <div>
+            {" "}
+            <Projects
+              imageSrc={project.imageSrc}
+              pageHref={project.pageHref}
+              pageTitle={project.pageTitle}
+              pageDescription={project.pageDescription}
+            />
+          </div>
+        ))
+      }
     </div>
-    <div id="skills">
-      <h2 class="my-8">My Skills</h2>
+    <div>
+      <h2 class="my-8 text-4xl" id="skills">My Skills</h2>
       <Skills />
     </div>
-    <div id="about">
-      <h2 class="my-8">About me</h2>
+    <div>
+      <h2 class="my-8 text-4xl" id="about">About me</h2>
       <About />
     </div>
   </main>
