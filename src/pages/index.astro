@@ -4,17 +4,22 @@ import About from "../components/About.astro";
 import Projects from "../components/Projects.astro";
 import Skills from "../components/Skills.astro";
 import { projects } from "../services/info.json";
+import Contact from "../components/Contact.astro";
 ---
 
 <Layout title="Laia Xarau - developer">
-  <main>
+  <main class="sm: w-auto">
     <h1>Front-End Developer & SEO</h1>
-    <h2 class="text-4xl" id="projects">My projects</h2>
+    <p class="text-verd m-4 pb-4">
+      This is my presentation as a Front-End Developer. Hope you enjoy checking
+      my projects. Please, do not hesitate to give me your feedback. Developing
+      since 2023
+    </p>
+    <h2>My projects</h2>
     <div class="flex flex-row col-2 gap-10">
       {
         projects.map((project) => (
           <div>
-            {" "}
             <Projects
               imageSrc={project.imageSrc}
               pageHref={project.pageHref}
@@ -26,12 +31,15 @@ import { projects } from "../services/info.json";
       }
     </div>
     <div>
-      <h2 class="my-8 text-4xl" id="skills">My Skills</h2>
+      <h2 id="skills">My Skills</h2>
       <Skills />
     </div>
     <div>
-      <h2 class="my-8 text-4xl" id="about">About me</h2>
+      <h2 id="about">About me</h2>
       <About />
+
+      <h2 id="about">Let's work?</h2>
+      <Contact />
     </div>
   </main>
 </Layout>
@@ -46,54 +54,16 @@ import { projects } from "../services/info.json";
     font-size: 20px;
     line-height: 1.6;
   }
-  .astro-a {
-    position: absolute;
-    top: -32px;
-    left: 50%;
-    transform: translatex(-50%);
-    width: 220px;
-    height: auto;
-    z-index: -1;
-  }
+
   h1 {
     font-size: 4rem;
     font-weight: 700;
     line-height: 1;
     text-align: center;
     margin-bottom: 1em;
+    color: #032b40;
   }
-  .text-gradient {
-    background-image: var(--accent-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 400%;
-    background-position: 0%;
-  }
-  .instructions {
-    margin-bottom: 2rem;
-    border: 1px solid rgba(var(--accent-light), 25%);
-    background: linear-gradient(
-      rgba(var(--accent-dark), 66%),
-      rgba(var(--accent-dark), 33%)
-    );
-    padding: 1.5rem;
-    border-radius: 8px;
-  }
-  .instructions code {
-    font-size: 0.8em;
-    font-weight: bold;
-    background: rgba(var(--accent-light), 12%);
-    color: rgb(var(--accent-light));
-    border-radius: 4px;
-    padding: 0.3em 0.4em;
-  }
-  .instructions strong {
-    color: rgb(var(--accent-light));
-  }
-  .link-card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-    gap: 2rem;
-    padding: 0;
+  h2 {
+    @apply my-8 text-4xl text-verd border-b border-b-verdclar;
   }
 </style>

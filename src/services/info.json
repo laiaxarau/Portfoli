@@ -3,7 +3,7 @@
     {
           "imageSrc": "/illusions2.png",
           "pageHref": "https://www.il-lusions.cat/",
-          "pageTitle": "Non-profit site",
+          "pageTitle": "Wordpress site",
           "pageDescription": "A wordpress site performed with Elementor for a non-profit organization"
     },
     {
@@ -14,9 +14,9 @@
         }
     ],
     "AboutMe":[
-        "I started learning SEO and Digital Marketing and working with Worpress and Prestashop.",
-        "When I realised how badly I needed a developer to solve any SEO issue.",
-        "That's why I started to poke my nose into developing stuff and I found out something that really touched me, I found a kind of magic into coding 💫.",
-        "So, here I am, learning development and looking for a project that challenge myself."
+        "I started learning SEO and Digital Marketing while working with Worpress and Prestashop.",
+        "When I realised how badly I needed a developer to solve some SEO issues.",
+        "That's why I started to poke my nose into web development and I found out something that really touched me, I found a kind of magic into coding 💫.",
+        "So, here I am: learning tirelessly development and looking for a project that challenges myself."
     ]
 }
