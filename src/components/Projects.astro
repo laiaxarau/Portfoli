@@ -1,27 +1,22 @@
 ---
-interface Props {
-  imageSrc: string;
-  imageAlt?: string;
-  pageHref: string;
-  pageTitle: string;
-  pageDescription: string;
-}
-
-const { imageSrc, imageAlt, pageHref, pageTitle, pageDescription } =
-  Astro.props;
+import Project from "./Project.astro";
+import { projects } from "../services/info.json";
 ---
 
-<a href={pageHref} target="_blank" class="max-w-sm m-2">
-  <div>
-    <img class="rounded-lg" src={imageSrc} alt={imageAlt} />
+<section id="projects">
+  <h2 class="my-8 text-4xl text-verd border-b border-b-verdclar">
+    My projects
+  </h2>
+  <div class="flex flex-col md:flex-row col-2 gap-10">
+    {
+      projects.map((project) => (
+        <Project
+          imageSrc={project.imageSrc}
+          pageHref={project.pageHref}
+          pageTitle={project.pageTitle}
+          pageDescription={project.pageDescription}
+        />
+      ))
+    }
   </div>
-  <div class="p-3">
-    <h3 class="text-verd underline-offset-2 font-bold text-2xl">
-      {pageTitle}
-    </h3>
-
-    <p class="mb-3 font-lg text-lletra dark:text-gray-400">
-      {pageDescription}
-    </p>
-  </div>
-</a>
+</section>

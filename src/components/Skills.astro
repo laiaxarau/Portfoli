@@ -1,45 +1,21 @@
-<div class="flex flex-row">
-  <img
-    class="object-scale-down h-24 w-24"
-    loading="lazy"
-    src="./html-5.png"
-    alt="HTML5"
-  />
-  <img
-    class="object-scale-down h-24 w-24"
-    loading="lazy"
-    src="./CSS3_logo.png"
-    alt="CSS3"
-  />
-  <img
-    class="object-scale-down h-24 w-24"
-    loading="lazy"
-    src="./javascript-logo.png"
-    alt="JavaScript"
-  />
-  <img
-    class="object-scale-down h-24 w-24"
-    loading="lazy"
-    src="./astro2.png"
-    alt="Astro"
-  />
-  <img
-    class="object-scale-down h-24 w-24"
-    loading="lazy"
-    src="./Tailwind CSS.png"
-    alt="Tailwind"
-  />
+---
+import { developSkills } from "../services/info.json";
+---
 
-  <img
-    class="object-scale-down h-24 w-24"
-    loading="lazy"
-    src="./WordPress-logo.png"
-    alt="Wordpress"
-  />
-  <!-- <img
-    class="object-scale-down h-24 w-24"
-    loading="lazy"
-    src="./prestashop.png"
-    alt="icono HTML"
-  /> -->
-</div>
+<section id="skills" class="align-center py-8">
+  <!-- afageixo align-center per veure si centro el div -->
+  <h2 class="my-8 text-4xl text-verd border-b border-b-verdclar">My Skills</h2>
+  <!-- <h3 class="text-verd text-2xl text-center border-b">Developing</h3> -->
+  <div class="flex flex-row flex-wrap justify-center py-6">
+    {
+      developSkills.map((skill) => (
+        <img
+          class="object-scale-down h-28 w-28"
+          loading="lazy"
+          src={skill.src}
+          alt={skill.alt}
+        />
+      ))
+    }
+  </div>
+</section>

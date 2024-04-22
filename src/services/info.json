@@ -1,22 +1,90 @@
 {
-    "projects": [
-    {
-          "imageSrc": "/illusions2.png",
-          "pageHref": "https://www.il-lusions.cat/",
-          "pageTitle": "Wordpress site",
-          "pageDescription": "A wordpress site performed with Elementor for a non-profit organization"
+    "intro": {
+        "text": "This is my presentation as a Front-End Developer. Hope you enjoy checking my projects. Please, do not hesitate to give me your feedback. Developing since 2023"
     },
-    {
-         "imageSrc":"/spacex_home2.png",
-         "pageHref":"https://master--laiaspacex.netlify.app/",
-         "pageTitle":"SpaceX API site",
-         "pageDescription":"An Astro site performed with Tailwind and fetching images and information from SpaceX API"
+    "projects": [
+        {
+            "imageSrc": "/illusions2.png",
+            "pageHref": "https://www.il-lusions.cat/",
+            "pageTitle": "Wordpress site",
+            "pageDescription": "A wordpress site performed with Elementor for a non-profit organization"
+        },
+        {
+            "imageSrc": "/spacex_home2.png",
+            "pageHref": "https://master--laiaspacex.netlify.app/",
+            "pageTitle": "SpaceX API site",
+            "pageDescription": "An Astro site performed with Tailwind and fetching images and information from SpaceX API"
         }
     ],
-    "AboutMe":[
+    "developSkills": [
+        {
+            "class": "object-scale-down h-24 w-24",
+            "loading": "lazy",
+            "src": "./html-5.png",
+            "alt": "HTML5"
+        },
+        {
+            "class": "object-scale-down h-24 w-24",
+            "loading": "lazy",
+            "src": "./CSS3_logo.png",
+            "alt": "CSS3"
+        },
+        {
+            "class": "object-scale-down h-24 w-24",
+            "loading": "lazy",
+            "src": "./javascript-logo.png",
+            "alt": "JavaScript"
+        },
+        {
+            "class": "object-scale-down h-24 w-24",
+            "loading": "lazy",
+            "src": "./astro2.png",
+            "alt": "Astro"
+        },
+        {
+            "class": "object-scale-down h-24 w-24",
+            "loading": "lazy",
+            "src": "./Tailwind CSS.png",
+            "alt": "Tailwind"
+        },
+        {
+            "class": "object-scale-down h-24 w-24",
+            "loading": "lazy",
+            "src": "./logo-github.png",
+            "alt": "GitHub"
+        },
+        {
+            "class": "object-scale-down h-24 w-24",
+            "loading": "lazy",
+            "src": "./WordPress-logo2.png",
+            "alt": "Wordpress"
+        }
+    ],
+    "seoSkills":[
+        {
+            "class": "object-scale-down h-24 w-24",
+            "loading": "lazy",
+            "src": "./analytics2.png",
+            "alt": "Google Analytics"
+        },
+        {
+            "class": "object-scale-down h-24 w-24",
+            "loading": "lazy",
+            "src": "./yoast.png",
+            "alt": "Yoast"
+        },
+        {
+            "class": "object-scale-down h-24 w-24",
+            "loading": "lazy",
+            "src": "./googleAds.png",
+            "alt": "Google Ads"
+        }
+    ],
+    "aboutMe": [
         "I started learning SEO and Digital Marketing while working with Worpress and Prestashop.",
         "When I realised how badly I needed a developer to solve some SEO issues.",
         "That's why I started to poke my nose into web development and I found out something that really touched me, I found a kind of magic into coding 💫.",
+        "In this page you can find the projects of my tinny career, but if you visit my GitHub you can find how I created this site. Not only using components but creating a json as my own API to show the information and avoid problems on future updates.",
         "So, here I am: learning tirelessly development and looking for a project that challenges myself."
     ]
 }
