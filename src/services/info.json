@@ -84,7 +84,7 @@
         "I started learning SEO and Digital Marketing while working with Worpress and Prestashop.",
         "When I realised how badly I needed a developer to solve some SEO issues.",
         "That's why I started to poke my nose into web development and I found out something that really touched me, I found a kind of magic into coding 💫.",
-        "In this page you can find the projects of my tinny career, but if you visit my GitHub you can find how I created this site. Not only using components but creating a json as my own API to show the information and avoid problems on future updates.",
+        "In this page you can find the projects of my tinny career, but if you visit my <a href='https://github.com/laiaxarau/Portfoli' class='text-verd font-bold'target='_blank'>GitHub</a> you can find how I created this site. Not only using components but creating a json as my own API to show the information and avoid problems on future updates.",
         "So, here I am: learning tirelessly development and looking for a project that challenges myself."
     ]
 }

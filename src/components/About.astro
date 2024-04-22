@@ -4,5 +4,5 @@ import { aboutMe } from "../services/info.json";
 
 <section id="about">
   <h2 class="my-8 text-4xl text-verd border-b border-b-verdclar">About me</h2>
-  {aboutMe.map((element) => <p class="text-lletra">{element}</p>)}
+  {aboutMe.map((element) => <p set:html={element} />)}
 </section>
