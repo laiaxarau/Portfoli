@@ -1,0 +1,14 @@
+---
+// GoogleAnalytics.astro
+---
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7WG998CZQS"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(name: string, value: any) {
+    window.dataLayer.push({ name, value });
+  }
+  gtag("js", new Date());
+  gtag("config", "G-7WG998CZQS");
+</script>
