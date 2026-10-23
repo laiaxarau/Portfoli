@@ -1,8 +1,20 @@
 {
     "intro": {
-        "text": "This is my presentation as a Front-End Developer. Hope you enjoy checking my projects. Please, do not hesitate to give me your feedback. Developing since 2023"
+        "text": "I learned to program to become a better SEO. Now, I am the consultant who understands the code your developers write—and who knows why Google cannot crawl your website."
     },
     "projects": [
+        {
+            "imageSrc": "/seoambtalons.jpg",
+            "pageHref": "https://master--laiaspacex.netlify.app/",
+            "pageTitle": "SEOambtalons",
+            "pageDescription": "An Astro site performed with Tailwind and fetching images and information from SpaceX API"
+        },
+        {
+            "imageSrc": "/madrid.jpg",
+            "pageHref": "https://master--laiaspacex.netlify.app/",
+            "pageTitle": "Madrid, tria la teva aventura",
+            "pageDescription": "An Astro site performed with Tailwind and fetching images and information from SpaceX API"
+        },
         {
             "imageSrc": "/illusions2.png",
             "pageHref": "https://www.il-lusions.cat/",
